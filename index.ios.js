@@ -18,7 +18,7 @@ var Components = React.createClass({
   render: function() {
     return (
       <View style={[styles.container]}>
-        <Input size={"sm"} width={300} type={"number"}/>
+        <Input size={"sm"} width={300}/>
       </View>
     );
   }

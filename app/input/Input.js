@@ -46,13 +46,15 @@ var Input = React.createClass({
          */
         mask: PropTypes.string,
 
+        showClearButton: PropTypes.bool
     },
 
     getDefaultProps(){
         return {
             width: Dimensions.get("window").width,
             //extend from InputView
-            placeholder: "请填写"
+            placeholder: "请填写",
+            showClearButton: true
         }
     },
 
@@ -87,11 +89,6 @@ var Input = React.createClass({
                     onChangeText={this._onChangeText}
                     mask={mask}
                     />
-                <TouchableWithoutFeedback onPress={()=>{this._onChangeText("")}}>
-                    <View style={[styles.clearBTN]}>
-                        <Image source={require("../img/input_clear.png")} style={styles.clearBTNImg}/>
-                    </View>
-                </TouchableWithoutFeedback>
             </View>
         );
     },
@@ -135,16 +132,6 @@ var styles = StyleSheet.create({
         marginBottom: 1,
         flex: 1,
     },
-
-    clearBTN: {
-        alignSelf: "center",
-        justifyContent: 'center',
-    },
-    clearBTNImg: {
-        width:13,
-        height:13,
-        opacity:0.6,
-    }
 });
 
 module.exports = Input;
