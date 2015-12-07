@@ -13,8 +13,12 @@ var {
   TouchableOpacity
 } = React;
 
-var Input = require("./app/input/Input");
-var Picker = require("./app/picker/PickerView.ios");
+var {
+    Input,
+    Picker,
+    TextArea,
+    ListView
+} = require("./app/index");
 
 var Components = React.createClass({
   getInitialState: function() {
@@ -28,6 +32,7 @@ var Components = React.createClass({
       <View style={[styles.mt40]}>
         {this._renderInput()}
         {this._renderPicker()}
+        {this._renderTextArea()}
       </View>
     );
   },
@@ -36,7 +41,7 @@ var Components = React.createClass({
     return (
         <View>
           <Text>输入框控件</Text>
-          <Input size={"sm"} width={300}/>
+          <View style={styles.mt10}><Input size={"sm"} width={300}/></View>
         </View>
     );
   },
@@ -47,16 +52,32 @@ var Components = React.createClass({
     return (
         <View style={styles.mt40}>
           <TouchableOpacity onPress={()=>{this.setState({isShowPicker:true})}}>
-            <Text>Show picker</Text>
+            <Text>点击显示选择器控件</Text>
           </TouchableOpacity>
-          <Picker items={items}
-                  isShow={this.state.isShowPicker}/>
+          <View style={styles.mt10}>
+            <Picker items={items}
+                    isShow={this.state.isShowPicker}/>
+          </View>
+        </View>
+    );
+  },
+
+  _renderTextArea: function() {
+    return (
+        <View style={styles.mt40}>
+          <Text>输入框计字数控件</Text>
+          <View style={styles.mt10}>
+            <TextArea maxLength={100}/>
+          </View>
         </View>
     );
   }
 });
 
 var styles = StyleSheet.create({
+  mt10: {
+    marginTop: 10
+  },
   mt40: {
     marginTop: 40
   }
