@@ -14,6 +14,7 @@ var {
   Dimensions,
   ListView,
   ActivityIndicatorIOS,
+  TouchableWithoutFeedback,
   Image
 } = React;
 
@@ -22,6 +23,7 @@ var {
     Picker,
     TextArea,
     RefreshableListView,
+    PhotoPicker
 } = require("./app/index");
 
 var ScrollableTabView = require('react-native-scrollable-tab-view');
@@ -38,10 +40,10 @@ var Components = React.createClass({
           <PickerExample tabLabel={"Picker"}/>
           <TextAreaExample tabLabel={"TextArea"}/>
           <ListViewExample tabLabel={"ListView"}/>
+          <PhotoPickerExample tabLabel={"PhotoPicker"}/>
         </ScrollableTabView>
     );
-  },
-
+  }
 
 });
 
@@ -168,9 +170,19 @@ var ListViewExample = React.createClass({
     if (this.state.currentPage < this.state.totalPage) {
       return <ActivityIndicatorIOS style={[styles.activity]} />;
     }
-  },
+  }
 
 });
+
+var PhotoPickerExample = React.createClass({
+
+  render: function() {
+    return (
+        <PhotoPicker />
+    );
+  }
+});
+
 
 var styles = StyleSheet.create({
   container: {

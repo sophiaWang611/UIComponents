@@ -9,7 +9,9 @@ var Input = require("./Input/Input");
 var Picker = require("./Picker/PickerView.ios");
 var TextArea = require("./TextArea");
 var RefreshableListView = require("./RefreshableListView");
+var PhotoPicker = require("./Photo");
 
 module.exports = {
-    Input, Picker, TextArea, RefreshableListView
+    Input, Picker, TextArea, RefreshableListView,
+    PhotoPicker
 };
