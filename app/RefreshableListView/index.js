@@ -6,7 +6,7 @@ var {
 } = React;
 
 var isPromise = require('is-promise');
-var delay = require('../utils/delay');
+var delay = require('./../utils/delay');
 var ControlledRefreshableListView = require('./ControlledRefreshableListView');
 
 const LISTVIEW_REF = 'listview';
@@ -73,7 +73,7 @@ var RefreshableListView = React.createClass({
         isRefreshing={isRefreshing}
       />
     )
-  },
+  }
 });
 
 RefreshableListView.DataSource = ListView.DataSource;

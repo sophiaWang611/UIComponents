@@ -8,8 +8,8 @@ var React = require('react-native');
 var Input = require("./Input/Input");
 var Picker = require("./Picker/PickerView.ios");
 var TextArea = require("./TextArea");
-var ListView = require("./ListView");
+var RefreshableListView = require("./RefreshableListView");
 
 module.exports = {
-    Input, Picker, TextArea, ListView
+    Input, Picker, TextArea, RefreshableListView
 };

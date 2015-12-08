@@ -6,6 +6,9 @@
     "start": "node_modules/react-native/packager/packager.sh"
   },
   "dependencies": {
-    "react-native": "^0.15.0"
+    "react-native": "^0.15.0",
+    "react-native-tableview": "^1.4.1",
+    "is-promise": "^2.0.0",
+    "react-native-scrollable-tab-view": "^0.3.1"
   }
 }

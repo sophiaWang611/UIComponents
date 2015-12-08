@@ -24,6 +24,11 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		EC6370971C11625C00C942B3 /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6370961C11625C00C942B3 /* InputView.m */; };
 		EC63709A1C11637C00C942B3 /* InputViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6370991C11637C00C942B3 /* InputViewManager.m */; };
+		ECC6ECB31C157A4B009B9635 /* PickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC6ECAB1C157A4B009B9635 /* PickerView.m */; };
+		ECC6ECB41C157A4B009B9635 /* PickerViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC6ECAD1C157A4B009B9635 /* PickerViewManager.m */; };
+		ECC6ECB51C157A4B009B9635 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC6ECB01C157A4B009B9635 /* TableView.m */; };
+		ECC6ECB61C157A4B009B9635 /* TableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC6ECB21C157A4B009B9635 /* TableViewManager.m */; };
+		ECC6ECC71C157A92009B9635 /* libRNTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC6ECC61C157A87009B9635 /* libRNTableView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +109,13 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		ECC6ECC51C157A87009B9635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECC6ECC11C157A87009B9635 /* RNTableView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 873769951B7CD6E900F7C3C2;
+			remoteInfo = RNTableView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +143,15 @@
 		EC6370961C11625C00C942B3 /* InputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
 		EC6370981C11635E00C942B3 /* InputViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewManager.h; sourceTree = "<group>"; };
 		EC6370991C11637C00C942B3 /* InputViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputViewManager.m; sourceTree = "<group>"; };
+		ECC6ECAA1C157A4B009B9635 /* PickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerView.h; sourceTree = "<group>"; };
+		ECC6ECAB1C157A4B009B9635 /* PickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerView.m; sourceTree = "<group>"; };
+		ECC6ECAC1C157A4B009B9635 /* PickerViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewManager.h; sourceTree = "<group>"; };
+		ECC6ECAD1C157A4B009B9635 /* PickerViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewManager.m; sourceTree = "<group>"; };
+		ECC6ECAF1C157A4B009B9635 /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
+		ECC6ECB01C157A4B009B9635 /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
+		ECC6ECB11C157A4B009B9635 /* TableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewManager.h; sourceTree = "<group>"; };
+		ECC6ECB21C157A4B009B9635 /* TableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewManager.m; sourceTree = "<group>"; };
+		ECC6ECC11C157A87009B9635 /* RNTableView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNTableView.xcodeproj; path = "../node_modules/react-native-tableview/RNTableView.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC6ECC71C157A92009B9635 /* libRNTableView.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
@@ -237,6 +259,8 @@
 		13B07FAE1A68108700A75B9A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				ECC6ECA91C157A4B009B9635 /* Picker */,
+				ECC6ECAE1C157A4B009B9635 /* TabView */,
 				EC6370941C11623E00C942B3 /* Input */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -267,6 +291,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				ECC6ECC11C157A87009B9635 /* RNTableView.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
 				00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */,
@@ -320,6 +345,38 @@
 			);
 			name = Input;
 			path = Components/Input;
+			sourceTree = "<group>";
+		};
+		ECC6ECA91C157A4B009B9635 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				ECC6ECAA1C157A4B009B9635 /* PickerView.h */,
+				ECC6ECAB1C157A4B009B9635 /* PickerView.m */,
+				ECC6ECAC1C157A4B009B9635 /* PickerViewManager.h */,
+				ECC6ECAD1C157A4B009B9635 /* PickerViewManager.m */,
+			);
+			name = Picker;
+			path = Components/Picker;
+			sourceTree = "<group>";
+		};
+		ECC6ECAE1C157A4B009B9635 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				ECC6ECAF1C157A4B009B9635 /* TableView.h */,
+				ECC6ECB01C157A4B009B9635 /* TableView.m */,
+				ECC6ECB11C157A4B009B9635 /* TableViewManager.h */,
+				ECC6ECB21C157A4B009B9635 /* TableViewManager.m */,
+			);
+			name = TabView;
+			path = Components/TabView;
+			sourceTree = "<group>";
+		};
+		ECC6ECC21C157A87009B9635 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECC6ECC61C157A87009B9635 /* libRNTableView.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,6 +485,10 @@
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
+				{
+					ProductGroup = ECC6ECC21C157A87009B9635 /* Products */;
+					ProjectRef = ECC6ECC11C157A87009B9635 /* RNTableView.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -508,6 +569,13 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		ECC6ECC61C157A87009B9635 /* libRNTableView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNTableView.a;
+			remoteRef = ECC6ECC51C157A87009B9635 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -559,10 +627,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC6ECB61C157A4B009B9635 /* TableViewManager.m in Sources */,
+				ECC6ECB51C157A4B009B9635 /* TableView.m in Sources */,
 				EC6370971C11625C00C942B3 /* InputView.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				ECC6ECB41C157A4B009B9635 /* PickerViewManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				EC63709A1C11637C00C942B3 /* InputViewManager.m in Sources */,
+				ECC6ECB31C157A4B009B9635 /* PickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +707,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native-tableview/**",
 				);
 				INFOPLIST_FILE = Components/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -651,6 +724,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native-tableview/**",
 				);
 				INFOPLIST_FILE = Components/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

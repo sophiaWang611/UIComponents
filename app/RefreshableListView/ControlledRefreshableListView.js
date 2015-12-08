@@ -11,7 +11,7 @@ var {
     ActivityIndicatorIOS,
     Image,
     } = React;
-var createElementFrom = require('../utils/createElementFrom');
+var createElementFrom = require('./../utils/createElementFrom');
 
 const SCROLL_EVENT_THROTTLE = 32;
 const MIN_PULLDOWN_DISTANCE = 40;
@@ -165,7 +165,7 @@ var ControlledRefreshableListView = React.createClass({
               contentContainerStyle={this.getContentContainerStyle()}
               renderHeader={()=>{
                 var msg = this.state.msg;
-                var loadImg = <Image source={require("../../img/icon_load.png")} style={[stylesheet.imageLabel,{transform:[{rotate:this.state.rotate}]}]}/>;
+                var loadImg = <Image source={require("../img/icon_load.png")} style={[stylesheet.imageLabel,{transform:[{rotate:this.state.rotate}]}]}/>;
                 if (this.props.isRefreshing) {
                   msg = statusStrLoad;
                   loadImg = <ActivityIndicatorIOS style={stylesheet.imageLabel}/>;
@@ -179,8 +179,7 @@ var ControlledRefreshableListView = React.createClass({
                       </View>
                     </View>
                   );
-              }}
-              />
+              }}/>
         </View>
     );
   }
